@@ -28,9 +28,8 @@ def main():
 
 
     films_clusters = pd.read_csv('./data/cluster_labels.csv')
-    vectors_overvies = pd.read_csv('./data/preprocessed_data.csv')
-    data = pd.concat([films_clusters, vectors_overvies.drop(columns=['title'])], axis=1)
-    data.drop(columns=['overview'], inplace=True)
+    vectors_data = pd.read_csv('./data/preprocessed_data.csv')
+    data = pd.concat([films_clusters, vectors_data.drop(columns=['title'])], axis=1)
 
 
     film_title = input('🎬 Enter the name of a film you like: ').strip()
