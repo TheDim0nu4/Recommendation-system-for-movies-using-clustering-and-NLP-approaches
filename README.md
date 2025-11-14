@@ -51,4 +51,77 @@ Source: https://www.kaggle.com/datasets/rounakbanik/the-movies-dataset
 
 ## 🛠️ Data processing 
 
+Before creating clusters, we need to explore and preprocess our data. <br>
+
+It includes: <br>
+1. Basic exploration and preprocessing (check and clean data) <br>
+2. Text data preprocessing (tokenization, removing stop words, stemming) <br>
+3. Analysis of the data (histograms, bar plots, scatter plots) <br>
+4. Vectorization of the data (TfidfVectorizer and CountVectorizer) <br>
+5. Reduction of dimensionality (PCA) <br>
+6. Saving the preprocessed data <br>
+
+Code and explanation are available in data.ipynb.
+
+
+
+## 🤖 Modeling 
+
+In this step, we are going to apply a clustering algorithm on our preprocessed data. In this project, we used one of the most common algorithms — KMeans, 
+because it needs only one parameter and works well with large data. <br>
+
+It includes: <br>
+1. Getting the optimal number of clusters (elbow method and silhouette score) <br>
+2. Training the model with the optimal k <br>
+3. Exploring and visualizing the clusters (bar plot, UMAP) <br>
+4. Saving the model and necessary data for the recommendation system <br>
+
+Code and explanation are available in modeling.ipynb.
+
+
+
+## ⭐ Creating recommendations
+
+The recommendation system works as follows: the user enters a movie they like (this can be done using the console application app.py). 
+Then the cluster of this movie is found, along with other movies that belong to the same cluster. 
+After that, based on Euclidean distance, the movies closest to the user’s movie in this cluster are selected.
+
+
+
+## 🏆 Results
+
+hgehehrerh
+
+
+
+## 🛠️ Tools Used
+
+- Python (Pandas, Numpy, nltk, Matplotlib, Scikit-learn, UMAP, Joblib)
+- Jupyter Notebook
+
+
+
+## ⚡ Installation
+
+1. Clone the repository: <br>
+
+   `git clone https://github.com/TheDim0nu4/Recommendation-system-for-movies-using-clustering-and-NLP-approaches.git` <br>
+   `cd Recommendation-system-for-movies-using-clustering-and-NLP-approaches` <br>
+   
+2. Create a Python virtual environment (optional but recommended): <br>
+
+   `python -m venv venv` <br>
+
+3. Install the required dependencies: <br>
+
+   `pip install -r requirements.txt` <br>
+
+
+
+## ✍️ Author
+
+This project was implemented in the autumn of 2025. The project was carried out by Dmytro Skrypchenko.
+
+
+
 
