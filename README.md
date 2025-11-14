@@ -88,12 +88,6 @@ After that, based on Euclidean distance, the movies closest to the user’s movi
 
 
 
-## 🏆 Results
-
-hgehehrerh
-
-
-
 ## 🛠️ Tools Used
 
 - Python (Pandas, Numpy, nltk, Matplotlib, Scikit-learn, UMAP, Joblib)
