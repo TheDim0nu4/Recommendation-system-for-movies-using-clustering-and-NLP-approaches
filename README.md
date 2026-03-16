@@ -25,6 +25,7 @@ Recommendation-system-for-movies-using-clustering-and-NLP-approaches/
 │ ├── data.ipynb
 │ ├── modeling.ipynb
 │
+├── .gitattributes
 ├── README.md
 ├── app.py
 ├── requirements.txt
@@ -33,6 +34,7 @@ Recommendation-system-for-movies-using-clustering-and-NLP-approaches/
 - data/ folder with raw and processed data.
 - models/ folder with trained model.
 - notebooks/ folder with jupyter notebooks.
+- .gitattributes configures Git LFS to store the large dataset file credits.csv used in the project.
 - README.md provides project overview and instructions.
 - app.py consol application for getting recommendations.
 - requirements.txt specifies Python dependencies.
@@ -101,14 +103,33 @@ After that, based on Euclidean distance, the movies closest to the user’s movi
 
    `git clone https://github.com/TheDim0nu4/Recommendation-system-for-movies-using-clustering-and-NLP-approaches.git` <br>
    `cd Recommendation-system-for-movies-using-clustering-and-NLP-approaches` <br>
+
+
    
-2. Create a Python virtual environment (optional but recommended): <br>
+## 🧠 Running Jupyter Notebooks (Conda)
 
-   `python -m venv venv` <br>
+1. Create a Conda environment: <br>
 
-3. Install the required dependencies: <br>
+   `conda create -n movie_rec_env python=3.11` <br>
 
-   `pip install -r requirements.txt` <br>
+2. Activate the environment: <br>
+
+   `conda activate movie_rec_env` <br>
+
+3. Install project dependencies: <br>
+
+   `python -m pip install -r requirements.txt` <br>
+
+4. Select the environment kernel in Jupyter: <br>
+
+   - Open the notebooks and select the kernel corresponding to the created Conda environment (movie_rec_env).
+   - After selecting the kernel, you can run the notebook cells and start working with the project.
+
+
+
+## ▶️ Running Console Application
+
+- `python app.py`
 
 
 
