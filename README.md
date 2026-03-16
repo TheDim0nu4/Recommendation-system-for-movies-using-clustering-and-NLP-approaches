@@ -135,7 +135,7 @@ After that, based on Euclidean distance, the movies closest to the user’s movi
 
 ## ✍️ Author
 
-This project was implemented in the autumn of 2025. The project was carried out by Dmytro Skrypchenko.
+The project was carried out by Dmytro Skrypchenko.
 
 
 
